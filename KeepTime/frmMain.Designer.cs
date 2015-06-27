@@ -44,7 +44,6 @@
             this.helpSep2 = new System.Windows.Forms.ToolStripSeparator();
             this.helpTopics = new System.Windows.Forms.ToolStripMenuItem();
             this.helpAbout = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabAlarm = new System.Windows.Forms.TabPage();
             this.btnAlarmStart = new System.Windows.Forms.Button();
@@ -109,8 +108,7 @@
             this.mainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuFile,
             this.menuOptions,
-            this.menuHelp,
-            this.toolStripMenuItem1});
+            this.menuHelp});
             this.mainMenu.Location = new System.Drawing.Point(0, 0);
             this.mainMenu.Name = "mainMenu";
             this.mainMenu.Size = new System.Drawing.Size(272, 24);
@@ -123,14 +121,14 @@
             this.fileExit});
             this.menuFile.Name = "menuFile";
             this.menuFile.Size = new System.Drawing.Size(37, 20);
-            this.menuFile.Text = strings.File;
+            this.menuFile.Text = global::KeepTime.strings.File;
             // 
             // fileExit
             // 
-            this.fileExit.Image = Properties.Resources.cross;
+            this.fileExit.Image = global::KeepTime.Properties.Resources.cross;
             this.fileExit.Name = "fileExit";
-            this.fileExit.Size = new System.Drawing.Size(92, 22);
-            this.fileExit.Text = strings.Exit;
+            this.fileExit.Size = new System.Drawing.Size(152, 22);
+            this.fileExit.Text = global::KeepTime.strings.Exit;
             this.fileExit.Click += new System.EventHandler(this.fileExit_Click);
             // 
             // menuOptions
@@ -147,33 +145,33 @@
             this.optionsHideTime});
             this.menuOptions.Name = "menuOptions";
             this.menuOptions.Size = new System.Drawing.Size(61, 20);
-            this.menuOptions.Text = strings.Options;
+            this.menuOptions.Text = global::KeepTime.strings.Options;
             // 
             // optionsTrayIcon
             // 
-            this.optionsTrayIcon.Checked = Properties.Settings.Default.OptionAlwaysShowTrayIcon;
+            this.optionsTrayIcon.Checked = global::KeepTime.Properties.Settings.Default.OptionAlwaysShowTrayIcon;
             this.optionsTrayIcon.CheckOnClick = true;
             this.optionsTrayIcon.Name = "optionsTrayIcon";
             this.optionsTrayIcon.Size = new System.Drawing.Size(201, 22);
-            this.optionsTrayIcon.Text = strings.AlwaysShowTrayIcon;
+            this.optionsTrayIcon.Text = global::KeepTime.strings.AlwaysShowTrayIcon;
             this.optionsTrayIcon.CheckedChanged += new System.EventHandler(this.optionsTrayIcon_CheckedChanged);
             // 
             // optionsDisablePopup
             // 
-            this.optionsDisablePopup.Checked = Properties.Settings.Default.OptionDisableAlertPopup;
+            this.optionsDisablePopup.Checked = global::KeepTime.Properties.Settings.Default.OptionDisableAlertPopup;
             this.optionsDisablePopup.CheckOnClick = true;
             this.optionsDisablePopup.Name = "optionsDisablePopup";
             this.optionsDisablePopup.Size = new System.Drawing.Size(201, 22);
-            this.optionsDisablePopup.Text = strings.DisableAlertPopup;
+            this.optionsDisablePopup.Text = global::KeepTime.strings.DisableAlertPopup;
             this.optionsDisablePopup.CheckedChanged += new System.EventHandler(this.optionsDisablePopup_CheckedChanged);
             // 
             // optionsDisableSound
             // 
-            this.optionsDisableSound.Checked = Properties.Settings.Default.OptionDisableSoundAlert;
+            this.optionsDisableSound.Checked = global::KeepTime.Properties.Settings.Default.OptionDisableSoundAlert;
             this.optionsDisableSound.CheckOnClick = true;
             this.optionsDisableSound.Name = "optionsDisableSound";
             this.optionsDisableSound.Size = new System.Drawing.Size(201, 22);
-            this.optionsDisableSound.Text = strings.DisableSoundAlert;
+            this.optionsDisableSound.Text = global::KeepTime.strings.DisableSoundAlert;
             this.optionsDisableSound.CheckedChanged += new System.EventHandler(this.optionsDisableSound_CheckedChanged);
             // 
             // optionsSep1
@@ -183,20 +181,20 @@
             // 
             // options24HourTime
             // 
-            this.options24HourTime.Checked = Properties.Settings.Default.Option24HourClock;
+            this.options24HourTime.Checked = global::KeepTime.Properties.Settings.Default.Option24HourClock;
             this.options24HourTime.CheckOnClick = true;
             this.options24HourTime.Name = "options24HourTime";
             this.options24HourTime.Size = new System.Drawing.Size(201, 22);
-            this.options24HourTime.Text = strings.TwentyFourHourClock;
+            this.options24HourTime.Text = global::KeepTime.strings.TwentyFourHourClock;
             this.options24HourTime.CheckedChanged += new System.EventHandler(this.options24HourTime_CheckedChanged);
             // 
             // optionsDayMonthYearFormat
             // 
-            this.optionsDayMonthYearFormat.Checked = Properties.Settings.Default.OptionDayMonthYearFormat;
+            this.optionsDayMonthYearFormat.Checked = global::KeepTime.Properties.Settings.Default.OptionDayMonthYearFormat;
             this.optionsDayMonthYearFormat.CheckOnClick = true;
             this.optionsDayMonthYearFormat.Name = "optionsDayMonthYearFormat";
             this.optionsDayMonthYearFormat.Size = new System.Drawing.Size(201, 22);
-            this.optionsDayMonthYearFormat.Text = strings.DayMonthYearFormat;
+            this.optionsDayMonthYearFormat.Text = global::KeepTime.strings.DayMonthYearFormat;
             this.optionsDayMonthYearFormat.CheckedChanged += new System.EventHandler(this.optionsDayMonthYearFormat_CheckedChanged);
             // 
             // optionsSep2
@@ -206,20 +204,20 @@
             // 
             // optionsHideDate
             // 
-            this.optionsHideDate.Checked = Properties.Settings.Default.OptionHideDate;
+            this.optionsHideDate.Checked = global::KeepTime.Properties.Settings.Default.OptionHideDate;
             this.optionsHideDate.CheckOnClick = true;
             this.optionsHideDate.Name = "optionsHideDate";
             this.optionsHideDate.Size = new System.Drawing.Size(201, 22);
-            this.optionsHideDate.Text = strings.HideDate;
+            this.optionsHideDate.Text = global::KeepTime.strings.HideDate;
             this.optionsHideDate.CheckedChanged += new System.EventHandler(this.optionsHideDate_CheckedChanged);
             // 
             // optionsHideTime
             // 
-            this.optionsHideTime.Checked = Properties.Settings.Default.OptionHideTime;
+            this.optionsHideTime.Checked = global::KeepTime.Properties.Settings.Default.OptionHideTime;
             this.optionsHideTime.CheckOnClick = true;
             this.optionsHideTime.Name = "optionsHideTime";
             this.optionsHideTime.Size = new System.Drawing.Size(201, 22);
-            this.optionsHideTime.Text = strings.HideTime;
+            this.optionsHideTime.Text = global::KeepTime.strings.HideTime;
             this.optionsHideTime.CheckedChanged += new System.EventHandler(this.optionsHideTime_CheckedChanged);
             // 
             // menuHelp
@@ -233,14 +231,14 @@
             this.helpAbout});
             this.menuHelp.Name = "menuHelp";
             this.menuHelp.Size = new System.Drawing.Size(44, 20);
-            this.menuHelp.Text = strings.Help;
+            this.menuHelp.Text = global::KeepTime.strings.Help;
             // 
             // helpGithub
             // 
-            this.helpGithub.Image = Properties.Resources.github_16x16;
+            this.helpGithub.Image = global::KeepTime.Properties.Resources.github_16x16;
             this.helpGithub.Name = "helpGithub";
             this.helpGithub.Size = new System.Drawing.Size(197, 22);
-            this.helpGithub.Text = strings.VisitGithub;
+            this.helpGithub.Text = global::KeepTime.strings.VisitGithub;
             this.helpGithub.Click += new System.EventHandler(this.helpGithub_Click);
             // 
             // helpSep1
@@ -250,10 +248,10 @@
             // 
             // helpChangelog
             // 
-            this.helpChangelog.Image = Properties.Resources.page_white_text;
+            this.helpChangelog.Image = global::KeepTime.Properties.Resources.page_white_text;
             this.helpChangelog.Name = "helpChangelog";
             this.helpChangelog.Size = new System.Drawing.Size(197, 22);
-            this.helpChangelog.Text = strings.Changelog;
+            this.helpChangelog.Text = global::KeepTime.strings.Changelog;
             this.helpChangelog.Click += new System.EventHandler(this.helpChangelog_Click);
             // 
             // helpSep2
@@ -263,24 +261,19 @@
             // 
             // helpTopics
             // 
-            this.helpTopics.Image = Properties.Resources.help;
+            this.helpTopics.Image = global::KeepTime.Properties.Resources.help;
             this.helpTopics.Name = "helpTopics";
             this.helpTopics.Size = new System.Drawing.Size(197, 22);
-            this.helpTopics.Text = strings.HelpTopics;
+            this.helpTopics.Text = global::KeepTime.strings.HelpTopics;
             this.helpTopics.Click += new System.EventHandler(this.helpTopics_Click);
             // 
             // helpAbout
             // 
-            this.helpAbout.Image = Properties.Resources.information;
+            this.helpAbout.Image = global::KeepTime.Properties.Resources.information;
             this.helpAbout.Name = "helpAbout";
             this.helpAbout.Size = new System.Drawing.Size(197, 22);
-            this.helpAbout.Text = strings.About;
+            this.helpAbout.Text = global::KeepTime.strings.About;
             this.helpAbout.Click += new System.EventHandler(this.helpAbout_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 20);
             // 
             // tabControl
             // 
@@ -310,19 +303,19 @@
             this.tabAlarm.Name = "tabAlarm";
             this.tabAlarm.Size = new System.Drawing.Size(264, 239);
             this.tabAlarm.TabIndex = 0;
-            this.tabAlarm.Text = strings.Alarm;
+            this.tabAlarm.Text = global::KeepTime.strings.Alarm;
             this.tabAlarm.UseVisualStyleBackColor = true;
             // 
             // btnAlarmStart
             // 
             this.btnAlarmStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAlarmStart.Image = Properties.Resources.control_play_blue;
+            this.btnAlarmStart.Image = global::KeepTime.Properties.Resources.control_play_blue;
             this.btnAlarmStart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAlarmStart.Location = new System.Drawing.Point(155, 209);
             this.btnAlarmStart.Name = "btnAlarmStart";
             this.btnAlarmStart.Size = new System.Drawing.Size(100, 23);
             this.btnAlarmStart.TabIndex = 5;
-            this.btnAlarmStart.Text = strings.Start;
+            this.btnAlarmStart.Text = global::KeepTime.strings.Start;
             this.btnAlarmStart.UseVisualStyleBackColor = true;
             this.btnAlarmStart.Click += new System.EventHandler(this.btnAlarmStart_Click);
             // 
@@ -347,91 +340,91 @@
             // chkAlarmMonday
             // 
             this.chkAlarmMonday.AutoSize = true;
-            this.chkAlarmMonday.Checked = Properties.Settings.Default.RepeatMonday;
-            this.chkAlarmMonday.DataBindings.Add(new System.Windows.Forms.Binding("Checked", Properties.Settings.Default, "RepeatMonday", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.chkAlarmMonday.Checked = global::KeepTime.Properties.Settings.Default.RepeatMonday;
+            this.chkAlarmMonday.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::KeepTime.Properties.Settings.Default, "RepeatMonday", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.chkAlarmMonday.Location = new System.Drawing.Point(6, 42);
             this.chkAlarmMonday.Name = "chkAlarmMonday";
             this.chkAlarmMonday.Size = new System.Drawing.Size(64, 17);
             this.chkAlarmMonday.TabIndex = 1;
-            this.chkAlarmMonday.Text = strings.Monday;
+            this.chkAlarmMonday.Text = global::KeepTime.strings.Monday;
             this.chkAlarmMonday.UseVisualStyleBackColor = true;
             this.chkAlarmMonday.CheckedChanged += new System.EventHandler(this.chkAlarmMonday_CheckedChanged);
             // 
             // chkAlarmWednesday
             // 
             this.chkAlarmWednesday.AutoSize = true;
-            this.chkAlarmWednesday.Checked = Properties.Settings.Default.RepeatWednesday;
-            this.chkAlarmWednesday.DataBindings.Add(new System.Windows.Forms.Binding("Checked", Properties.Settings.Default, "RepeatWednesday", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.chkAlarmWednesday.Checked = global::KeepTime.Properties.Settings.Default.RepeatWednesday;
+            this.chkAlarmWednesday.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::KeepTime.Properties.Settings.Default, "RepeatWednesday", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.chkAlarmWednesday.Location = new System.Drawing.Point(6, 88);
             this.chkAlarmWednesday.Name = "chkAlarmWednesday";
             this.chkAlarmWednesday.Size = new System.Drawing.Size(83, 17);
             this.chkAlarmWednesday.TabIndex = 3;
-            this.chkAlarmWednesday.Text = strings.Wednesday;
+            this.chkAlarmWednesday.Text = global::KeepTime.strings.Wednesday;
             this.chkAlarmWednesday.UseVisualStyleBackColor = true;
             this.chkAlarmWednesday.CheckedChanged += new System.EventHandler(this.chkAlarmWednesday_CheckedChanged);
             // 
             // chkAlarmSaturday
             // 
             this.chkAlarmSaturday.AutoSize = true;
-            this.chkAlarmSaturday.Checked = Properties.Settings.Default.RepeatSaturday;
-            this.chkAlarmSaturday.DataBindings.Add(new System.Windows.Forms.Binding("Checked", Properties.Settings.Default, "RepeatSaturday", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.chkAlarmSaturday.Checked = global::KeepTime.Properties.Settings.Default.RepeatSaturday;
+            this.chkAlarmSaturday.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::KeepTime.Properties.Settings.Default, "RepeatSaturday", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.chkAlarmSaturday.Location = new System.Drawing.Point(95, 65);
             this.chkAlarmSaturday.Name = "chkAlarmSaturday";
             this.chkAlarmSaturday.Size = new System.Drawing.Size(68, 17);
             this.chkAlarmSaturday.TabIndex = 6;
-            this.chkAlarmSaturday.Text = strings.Saturday;
+            this.chkAlarmSaturday.Text = global::KeepTime.strings.Saturday;
             this.chkAlarmSaturday.UseVisualStyleBackColor = true;
             this.chkAlarmSaturday.CheckedChanged += new System.EventHandler(this.chkAlarmSaturday_CheckedChanged);
             // 
             // chkAlarmTuesday
             // 
             this.chkAlarmTuesday.AutoSize = true;
-            this.chkAlarmTuesday.Checked = Properties.Settings.Default.RepeatTuesday;
-            this.chkAlarmTuesday.DataBindings.Add(new System.Windows.Forms.Binding("Checked", Properties.Settings.Default, "RepeatTuesday", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.chkAlarmTuesday.Checked = global::KeepTime.Properties.Settings.Default.RepeatTuesday;
+            this.chkAlarmTuesday.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::KeepTime.Properties.Settings.Default, "RepeatTuesday", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.chkAlarmTuesday.Location = new System.Drawing.Point(6, 65);
             this.chkAlarmTuesday.Name = "chkAlarmTuesday";
             this.chkAlarmTuesday.Size = new System.Drawing.Size(67, 17);
             this.chkAlarmTuesday.TabIndex = 2;
-            this.chkAlarmTuesday.Text = strings.Tuesday;
+            this.chkAlarmTuesday.Text = global::KeepTime.strings.Tuesday;
             this.chkAlarmTuesday.UseVisualStyleBackColor = true;
             this.chkAlarmTuesday.CheckedChanged += new System.EventHandler(this.chkAlarmTuesday_CheckedChanged);
             // 
             // chkAlarmFriday
             // 
             this.chkAlarmFriday.AutoSize = true;
-            this.chkAlarmFriday.Checked = Properties.Settings.Default.RepeatFriday;
-            this.chkAlarmFriday.DataBindings.Add(new System.Windows.Forms.Binding("Checked", Properties.Settings.Default, "RepeatFriday", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.chkAlarmFriday.Checked = global::KeepTime.Properties.Settings.Default.RepeatFriday;
+            this.chkAlarmFriday.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::KeepTime.Properties.Settings.Default, "RepeatFriday", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.chkAlarmFriday.Location = new System.Drawing.Point(95, 42);
             this.chkAlarmFriday.Name = "chkAlarmFriday";
             this.chkAlarmFriday.Size = new System.Drawing.Size(54, 17);
             this.chkAlarmFriday.TabIndex = 5;
-            this.chkAlarmFriday.Text = strings.Friday;
+            this.chkAlarmFriday.Text = global::KeepTime.strings.Friday;
             this.chkAlarmFriday.UseVisualStyleBackColor = true;
             this.chkAlarmFriday.CheckedChanged += new System.EventHandler(this.chkAlarmFriday_CheckedChanged);
             // 
             // chkAlarmSunday
             // 
             this.chkAlarmSunday.AutoSize = true;
-            this.chkAlarmSunday.Checked = Properties.Settings.Default.RepeatSunday;
-            this.chkAlarmSunday.DataBindings.Add(new System.Windows.Forms.Binding("Checked", Properties.Settings.Default, "RepeatSunday", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.chkAlarmSunday.Checked = global::KeepTime.Properties.Settings.Default.RepeatSunday;
+            this.chkAlarmSunday.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::KeepTime.Properties.Settings.Default, "RepeatSunday", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.chkAlarmSunday.Location = new System.Drawing.Point(6, 19);
             this.chkAlarmSunday.Name = "chkAlarmSunday";
             this.chkAlarmSunday.Size = new System.Drawing.Size(62, 17);
             this.chkAlarmSunday.TabIndex = 0;
-            this.chkAlarmSunday.Text = strings.Sunday;
+            this.chkAlarmSunday.Text = global::KeepTime.strings.Sunday;
             this.chkAlarmSunday.UseVisualStyleBackColor = true;
             this.chkAlarmSunday.CheckedChanged += new System.EventHandler(this.chkAlarmSunday_CheckedChanged);
             // 
             // chkAlarmThursday
             // 
             this.chkAlarmThursday.AutoSize = true;
-            this.chkAlarmThursday.Checked = Properties.Settings.Default.RepeatThursday;
-            this.chkAlarmThursday.DataBindings.Add(new System.Windows.Forms.Binding("Checked", Properties.Settings.Default, "RepeatThursday", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.chkAlarmThursday.Checked = global::KeepTime.Properties.Settings.Default.RepeatThursday;
+            this.chkAlarmThursday.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::KeepTime.Properties.Settings.Default, "RepeatThursday", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.chkAlarmThursday.Location = new System.Drawing.Point(93, 19);
             this.chkAlarmThursday.Name = "chkAlarmThursday";
             this.chkAlarmThursday.Size = new System.Drawing.Size(70, 17);
             this.chkAlarmThursday.TabIndex = 4;
-            this.chkAlarmThursday.Text = strings.Thursday;
+            this.chkAlarmThursday.Text = global::KeepTime.strings.Thursday;
             this.chkAlarmThursday.UseVisualStyleBackColor = true;
             this.chkAlarmThursday.CheckedChanged += new System.EventHandler(this.chkAlarmThursday_CheckedChanged);
             // 
@@ -439,14 +432,14 @@
             // 
             this.txtAlarmMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAlarmMessage.DataBindings.Add(new System.Windows.Forms.Binding("Text", Properties.Settings.Default, "AlarmMessage", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtAlarmMessage.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::KeepTime.Properties.Settings.Default, "AlarmMessage", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtAlarmMessage.Location = new System.Drawing.Point(132, 24);
             this.txtAlarmMessage.Multiline = true;
             this.txtAlarmMessage.Name = "txtAlarmMessage";
             this.txtAlarmMessage.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtAlarmMessage.Size = new System.Drawing.Size(124, 59);
             this.txtAlarmMessage.TabIndex = 3;
-            this.txtAlarmMessage.Text = Properties.Settings.Default.AlarmMessage;
+            this.txtAlarmMessage.Text = global::KeepTime.Properties.Settings.Default.AlarmMessage;
             this.txtAlarmMessage.Leave += new System.EventHandler(this.txtAlarmMessage_Leave);
             // 
             // lblAlarmMessage
@@ -653,32 +646,32 @@
             this.tabTimer.Name = "tabTimer";
             this.tabTimer.Size = new System.Drawing.Size(264, 239);
             this.tabTimer.TabIndex = 1;
-            this.tabTimer.Text = strings.Timer;
+            this.tabTimer.Text = global::KeepTime.strings.Timer;
             this.tabTimer.UseVisualStyleBackColor = true;
             // 
             // chkTimerRepeat
             // 
             this.chkTimerRepeat.AutoSize = true;
-            this.chkTimerRepeat.Checked = Properties.Settings.Default.RepeatTimer;
-            this.chkTimerRepeat.DataBindings.Add(new System.Windows.Forms.Binding("Checked", Properties.Settings.Default, "RepeatTimer", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.chkTimerRepeat.Checked = global::KeepTime.Properties.Settings.Default.RepeatTimer;
+            this.chkTimerRepeat.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::KeepTime.Properties.Settings.Default, "RepeatTimer", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.chkTimerRepeat.Location = new System.Drawing.Point(8, 89);
             this.chkTimerRepeat.Name = "chkTimerRepeat";
             this.chkTimerRepeat.Size = new System.Drawing.Size(61, 17);
             this.chkTimerRepeat.TabIndex = 4;
-            this.chkTimerRepeat.Text = strings.Repeat;
+            this.chkTimerRepeat.Text = global::KeepTime.strings.Repeat;
             this.chkTimerRepeat.UseVisualStyleBackColor = true;
             this.chkTimerRepeat.CheckedChanged += new System.EventHandler(this.chkTimerRepeat_CheckedChanged);
             // 
             // btnTimerStart
             // 
             this.btnTimerStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTimerStart.Image = Properties.Resources.control_play_blue;
+            this.btnTimerStart.Image = global::KeepTime.Properties.Resources.control_play_blue;
             this.btnTimerStart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTimerStart.Location = new System.Drawing.Point(155, 209);
             this.btnTimerStart.Name = "btnTimerStart";
             this.btnTimerStart.Size = new System.Drawing.Size(100, 23);
             this.btnTimerStart.TabIndex = 5;
-            this.btnTimerStart.Text = strings.Start;
+            this.btnTimerStart.Text = global::KeepTime.strings.Start;
             this.btnTimerStart.UseVisualStyleBackColor = true;
             this.btnTimerStart.Click += new System.EventHandler(this.btnTimerStart_Click);
             // 
@@ -761,14 +754,14 @@
             // 
             this.txtTimerMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimerMessage.DataBindings.Add(new System.Windows.Forms.Binding("Text", Properties.Settings.Default, "TimerMessage", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.txtTimerMessage.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::KeepTime.Properties.Settings.Default, "TimerMessage", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.txtTimerMessage.Location = new System.Drawing.Point(132, 24);
             this.txtTimerMessage.Multiline = true;
             this.txtTimerMessage.Name = "txtTimerMessage";
             this.txtTimerMessage.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtTimerMessage.Size = new System.Drawing.Size(124, 59);
             this.txtTimerMessage.TabIndex = 3;
-            this.txtTimerMessage.Text = Properties.Settings.Default.TimerMessage;
+            this.txtTimerMessage.Text = global::KeepTime.Properties.Settings.Default.TimerMessage;
             this.txtTimerMessage.Leave += new System.EventHandler(this.txtTimerMessage_Leave);
             // 
             // tabStopwatch
@@ -780,32 +773,32 @@
             this.tabStopwatch.Name = "tabStopwatch";
             this.tabStopwatch.Size = new System.Drawing.Size(264, 239);
             this.tabStopwatch.TabIndex = 2;
-            this.tabStopwatch.Text = strings.Stopwatch;
+            this.tabStopwatch.Text = global::KeepTime.strings.Stopwatch;
             this.tabStopwatch.UseVisualStyleBackColor = true;
             // 
             // btnStopwatchReset
             // 
             this.btnStopwatchReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnStopwatchReset.Image = Properties.Resources.arrow_refresh;
+            this.btnStopwatchReset.Image = global::KeepTime.Properties.Resources.arrow_refresh;
             this.btnStopwatchReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStopwatchReset.Location = new System.Drawing.Point(49, 209);
             this.btnStopwatchReset.Name = "btnStopwatchReset";
             this.btnStopwatchReset.Size = new System.Drawing.Size(100, 23);
             this.btnStopwatchReset.TabIndex = 0;
-            this.btnStopwatchReset.Text = strings.Reset;
+            this.btnStopwatchReset.Text = global::KeepTime.strings.Reset;
             this.btnStopwatchReset.UseVisualStyleBackColor = true;
             this.btnStopwatchReset.Click += new System.EventHandler(this.btnStopwatchReset_Click);
             // 
             // btnStopwatchStart
             // 
             this.btnStopwatchStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnStopwatchStart.Image = Properties.Resources.control_play_blue;
+            this.btnStopwatchStart.Image = global::KeepTime.Properties.Resources.control_play_blue;
             this.btnStopwatchStart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStopwatchStart.Location = new System.Drawing.Point(155, 209);
             this.btnStopwatchStart.Name = "btnStopwatchStart";
             this.btnStopwatchStart.Size = new System.Drawing.Size(100, 23);
             this.btnStopwatchStart.TabIndex = 1;
-            this.btnStopwatchStart.Text = strings.Start;
+            this.btnStopwatchStart.Text = global::KeepTime.strings.Start;
             this.btnStopwatchStart.UseVisualStyleBackColor = true;
             this.btnStopwatchStart.Click += new System.EventHandler(this.btnStopwatchStart_Click);
             // 
@@ -837,7 +830,7 @@
             // 
             this.statusDate.Name = "statusDate";
             this.statusDate.Size = new System.Drawing.Size(31, 18);
-            this.statusDate.Text = strings.Date;
+            this.statusDate.Text = global::KeepTime.strings.Date;
             // 
             // statusSep1
             // 
@@ -848,12 +841,12 @@
             // 
             this.statusTime.Name = "statusTime";
             this.statusTime.Size = new System.Drawing.Size(34, 18);
-            this.statusTime.Text = strings.Time;
+            this.statusTime.Text = global::KeepTime.strings.Time;
             // 
             // trayIcon
             // 
             this.trayIcon.ContextMenuStrip = this.trayIconMenu;
-            this.trayIcon.Text = strings.Alarm;
+            this.trayIcon.Text = global::KeepTime.strings.Alarm;
             this.trayIcon.DoubleClick += new System.EventHandler(this.trayIcon_DoubleClick);
             // 
             // trayIconMenu
@@ -867,7 +860,7 @@
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
-            this.exitToolStripMenuItem.Text = strings.Exit;
+            this.exitToolStripMenuItem.Text = global::KeepTime.strings.Exit;
             // 
             // timerTime
             // 
@@ -1002,7 +995,6 @@
         private System.Windows.Forms.Timer timerTimer;
         private System.Windows.Forms.Button btnStopwatchReset;
         private System.Windows.Forms.CheckBox chkTimerRepeat;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.Timer timerStopwatch;
     }
 }
