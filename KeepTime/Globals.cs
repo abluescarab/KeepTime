@@ -8,7 +8,7 @@ using System.Windows.Forms;
 namespace KeepTime {
     public static class Globals {
         public static readonly string GithubLink =
-            "http://github.com/abluescarab/";
+            "https://github.com/abluescarab/KeepTime";
         public static readonly string ChangelogPath =
             Path.Combine(Application.StartupPath, "Resources", "changelog.txt");
         public static readonly string HelpFilePath = 

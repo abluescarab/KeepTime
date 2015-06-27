@@ -88,7 +88,7 @@ namespace KeepTime {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Changelog....
+        ///   Looks up a localized string similar to Changelog.
         /// </summary>
         internal static string Changelog {
             get {
