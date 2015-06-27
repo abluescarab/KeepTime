@@ -5,7 +5,7 @@
       Included translations for English and Spanish
 
     Changed
-	* Program is now named SimpleTime
+	* Program is now named KeepTime
 
     Removed
     * frmMain.cs: Visit Abluescarab Designs link from Help menu
