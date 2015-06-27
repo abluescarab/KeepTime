@@ -1,4 +1,4 @@
-3.0.0   2015-00-00   Alana Gilston   <alana@abluescarab.us>
+3.0.0   2015-06-27   Alana Gilston   <alana@abluescarab.us>
     Added
     * frmMain.cs: New timer and stopwatch features
       Alarm repeat by day
