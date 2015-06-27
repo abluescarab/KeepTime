@@ -253,7 +253,7 @@
             this.helpChangelog.Image = Properties.Resources.page_white_text;
             this.helpChangelog.Name = "helpChangelog";
             this.helpChangelog.Size = new System.Drawing.Size(197, 22);
-            this.helpChangelog.Text = "Changelog......";
+            this.helpChangelog.Text = strings.Changelog;
             this.helpChangelog.Click += new System.EventHandler(this.helpChangelog_Click);
             // 
             // helpSep2
