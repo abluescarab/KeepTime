@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Switchex Help</title>
+
+<style>
+	html {
+		height: 100%;
+	}
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		padding: 0;
+		margin: 0;
+		padding-bottom: 10px;
+	}
+	h1 {
+		padding: 0;
+		margin: 0;
+	}
+	h2 {
+		border-bottom: 1px solid black;
+		padding-bottom: 1px;
+	}
+	h3 {
+		font-size: 16px;
+		font-weight: normal;
+	}
+	li {
+		margin-bottom: 3px;
+	}
+	.note {
+		margin-left: 10px;
+		font-style: italic;
+		border-left: 2px solid #3366CC;
+		padding: 3px 0px 3px 10px;
+		font-size: 13px;
+	}
+	.top {
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 15px !important;
+	}
+	.inner {
+		width: 800px;
+		margin: 0 auto;
+	}
+	.heading {
+		font-style: italic;
+		border-bottom: 1px solid black;
+	}
+	/* Shamelessly ripped from stackoverflow.com */
+	.button {
+		/* Space */
+		padding: .1em .6em;
+		margin: .1em .1em;
+		white-space: nowrap;
+		font-size: 12px;
+		line-height: 1.4;
+		display: inline-block;
+		
+		/* Color */
+		border: 1px solid #ccc;
+		font-style: normal !important;
+		background-color: #F7F7F7;
+		text-shadow: 0 1px 0 #fff;
+		color: #333;
+		
+		/* Border radius */
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		
+		/* Box shadow */
+		-webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+		-moz-box-shadow:    0px 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+		box-shadow:         0px 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+	}
+	.menu {
+		/* Space */
+		padding: .2em .6em .1em .6em;
+		margin: .1em .1em;
+		white-space: nowrap;
+		font-size: 12px;
+		line-height: 1.4;
+		display: inline-block;
+		
+		/* Color */
+		border: 1px solid #ccc;
+		font-style: normal !important;
+		background-color: #F7F7F7;
+		text-shadow: 0 1px 0 #fff;
+		color: #333;
+	}
+	.check:before {
+		content: "\2713";
+		margin-right: 5px;
+	}
+	#header {
+		background-color: #eee;
+		width: 100%;
+		height: 75px;
+		line-height: 75px;
+	}
+	#container {
+		margin: 0 auto;
+		width: 800px;
+	}
+</style>
+
+</head>
+<body>
+	<div id="header">
+		<div class="inner">
+			<h1>SimpleTime</h1>
+		</div>
+	</div>
+	
+	<div id="container">
+		<h2 id="contents">Table of Contents</h2>
+		<ol>
+			<li><a href="#intro">Introduction</a></li>
+            <li><a href="#alarm">Alarm</a></li>
+            <li><a href="#timer">Timer</a></li>
+            <li><a href="#stopwatch">Stopwatch</a></li>
+		</ol>
+		
+		<a href="#contents" class="top button">&#x25B2; Return to top</a>
+		
+		<h2 id="intro">Introduction</h2>
+		<p><strong>Features:</strong></p>
+		<ul>
+			<li>Set an alarm at any time, in both 12- and 24-hour formats</li>
+            <li>Set a timer for any amount of time up to 365 days</li>
+            <li>Track time with the stopwatch</li>
+            <li>Use month/day/year format or day/month/year format</li>
+            <li>Include a message and sound with your alarm and timer</li>
+            <li>Repeat the alarm any day of the week</li>
+            <li>Repeat the timer indefinitely</li>
+            <li>Minimize the program to the system tray</li>
+		</ul>
+
+        <h2 id="alarm">Alarm</h2>
+        <p>To use the alarm, use the three boxes to set the desired time. Include your message in the message box and check any repeat boxes if you want to repeat the alarm any other day.</p>
+        <p>Click the Start button when you want to start the alarm.</p>
+		
+        <h2 id="timer">Timer</h2>
+        <p>To use the timer, either use the up and down arrow buttons or enter your own numbers in the three boxes. Check the repeat box if you want to repeat the timer at the same interval indefinitely. Enter a custom message in the message box.</p>
+        <p>Click the Start button when you want to start the timer.</p>
+
+        <h2 id="stopwatch">Stopwatch</h2>
+        <p>Click the Start button when you want to start the stopwatch. <em>There may be some lag before the stopwatch begins.</em> When you want to stop the stopwatch, click the Stop button.</p>
+        <p>Clicking the Start button again will resume from your previous time. If you want to reset your time, just click the Reset button.</p>
+
+		<h2 id="copyright">Abluescarab Designs</h2>
+		<ul>
+			<li><a href="https://github.com/abluescarab/SimpleTime">Visit the GitHub Project</a></li>
+		</ul>
+		<p>Copyright &copy; 2010-2015 Abluescarab Designs.</p>
+		<p>This software is under the <a href="http://www.gnu.org/licenses/gpl-3.0.txt">GNU General Public License Version 3</a>.</p>
+	</div>
+</body>
+</html>

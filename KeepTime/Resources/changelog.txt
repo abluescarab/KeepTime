@@ -1,0 +1,38 @@
+3.0.0   2015-00-00   Alana Gilston   <alana@abluescarab.us>
+    Added
+    * frmMain.cs: New timer and stopwatch features
+      Alarm repeat by day
+      Included translations for English and Spanish
+
+    Changed
+	* Program is now named SimpleTime
+
+    Removed
+    * frmMain.cs: Visit Abluescarab Designs link from Help menu
+	  Removed alarm time from statusbar
+      Removed Start/Stop from File menu
+
+    Fixed
+    * frmMain.cs: Dates now display with forward slashes
+
+2.0.1   2013-12-21   Alana Gilston   <alana@abluescarab.us>
+    Changed
+    * Assembly name is now "Simple-Alarm"
+
+2.0.0   2013-12-21   Alana Gilston   <alana@abluescarab.us>
+    Added
+    * Option to disable sound
+    * Repeating alarm option
+
+    Changed
+    * Updated to C#
+    * Message can be multiline
+    * Name is now Simple Alarm
+    * Window is now smaller
+    * Time display format
+    * Control FlatStyle is now Flat
+    * Help file format
+
+    Removed
+    * Exit button on main form
+    * Does not close to system tray
